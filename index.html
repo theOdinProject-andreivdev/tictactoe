@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
   <head>
     <meta charset="UTF-8" />
@@ -7,6 +12,30 @@
     <title>tictactoe</title>
   </head>
   <body>
+    <div class="chooseGameMode">
+      Choose game mode:
+      <button class="multiplayer">Multi player</button>
+      <button class="singleplayer">Single player</button>
+    </div>
+
+    <div class="multiplayerscreen">
+      <div>Player 1 name:</div>
+      <input type="text" class="player1" />
+      <div>Player 2 name:</div>
+      <input type="text" class="player2" />
+      <button class="startmultiplayer">Start</button>
+    </div>
+
+    <div class="singleplayerscreen">
+      <div>Player name:</div>
+      <input type="text" class="player1" />
+      <button class="startsingleplayer">Start</button>
+    </div>
+
+    <div class="scoreboard">
+      <div class="player1score"></div>
+      <div class="player2score"></div>
+    </div>
     <div class="container">
       <div class="grid"></div>
     </div>
