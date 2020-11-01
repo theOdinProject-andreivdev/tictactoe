@@ -124,6 +124,7 @@ const game = (() => {
       if (gameboard.checkGameOver() == "tie") play();
     } else {
       alert("Please pick a valid block");
+      return;
     }
 
     if (currentPlayer == playerOne) currentPlayer = playerTwo;
