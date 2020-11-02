@@ -47,22 +47,22 @@ const game = (() => {
     let chooseGameMode = document.querySelector(".chooseGameMode");
     chooseGameMode.style.display = "none";
 
-    let multisinglescreen = document.querySelector(".singleplayerscreen");
-    multisinglescreen.style.display = "grid";
+    let singleplayerscreen = document.querySelector(".singleplayerscreen");
+    singleplayerscreen.style.display = "grid";
 
     let startSingleplayerButton = document.querySelector(".startsingleplayer");
     startSingleplayerButton.addEventListener("click", function () {
-      let player1Name = (Name = document.querySelector(".player"));
-      if (player1Name.value != "") {
-        multisinglescreen.style.display = "none";
+      let playerName = document.querySelector(".player");
+      if (playerName.value != "") {
+        singleplayerscreen.style.display = "none";
 
-        playerOne = Player("X", player1Name.value);
+        playerOne = Player("X", playerName.value);
         playerTwo = Player("O", "Computer");
 
         game.setCurrentPlayer(playerOne);
         game.play();
         drawScoreBoard();
-      }
+      } else alert("Please choose a name");
     });
   };
 
