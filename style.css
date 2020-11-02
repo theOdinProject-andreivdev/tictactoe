@@ -2,6 +2,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background: #f3f3f3;
+  color: #283747;
 }
 .container {
   position: fixed;
@@ -25,6 +27,11 @@ body {
   height: 100px;
   text-align: center;
   font-size: xx-large;
+  font-weight: 900;
+  border-radius: 10px;
+  margin: 1px;
+  background-color: #283747;
+  color: #f3f3f3;
 }
 
 .chooseGameMode {
@@ -37,12 +44,15 @@ body {
 .startmultiplayer,
 .startsingleplayer {
   margin-top: 10px;
+  font-weight: 400;
 }
 
 .multiplayerscreen,
-.singleplayerscreen {
+.singleplayerscreen,
+.chooseGameMode {
   margin: 30%;
   justify-content: center;
+  font-weight: 900;
 }
 
 .scoreboard {

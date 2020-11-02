@@ -47,14 +47,14 @@ const game = (() => {
     let chooseGameMode = document.querySelector(".chooseGameMode");
     chooseGameMode.style.display = "none";
 
-    let multiplayerscreen = document.querySelector(".singleplayerscreen");
-    multiplayerscreen.style.display = "grid";
+    let multisinglescreen = document.querySelector(".singleplayerscreen");
+    multisinglescreen.style.display = "grid";
 
-    let startMultiplayerButton = document.querySelector(".startsingleplayer");
-    startMultiplayerButton.addEventListener("click", function () {
+    let startSingleplayerButton = document.querySelector(".startsingleplayer");
+    startSingleplayerButton.addEventListener("click", function () {
       let player1Name = (Name = document.querySelector(".player1"));
       if (player1Name.value != "") {
-        multiplayerscreen.style.display = "none";
+        multisinglescreen.style.display = "none";
 
         playerOne = Player("X", player1Name.value);
         playerTwo = Player("O", "Computer");
