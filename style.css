@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
 body {
   font-family: "Roboto", sans-serif;
-  background: #f3f3f3;
+  background: #edf2f4;
   color: #283747;
 }
 .container {
@@ -30,8 +32,9 @@ body {
   font-weight: 900;
   border-radius: 10px;
   margin: 1px;
-  background-color: #283747;
-  color: #f3f3f3;
+  background-color: #2b2d42;
+  color: #edf2f4;
+  font-family: "Montserrat", sans-serif;
 }
 
 .chooseGameMode {

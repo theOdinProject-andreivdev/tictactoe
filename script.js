@@ -132,7 +132,9 @@ const game = (() => {
 
     if (gameMode == "singleplayer" && currentPlayer == playerTwo) {
       //computer
-      playComputer();
+      setTimeout(function () {
+        playComputer();
+      }, 250);
     }
   };
 
