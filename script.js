@@ -52,7 +52,7 @@ const game = (() => {
 
     let startSingleplayerButton = document.querySelector(".startsingleplayer");
     startSingleplayerButton.addEventListener("click", function () {
-      let player1Name = (Name = document.querySelector(".player1"));
+      let player1Name = (Name = document.querySelector(".player"));
       if (player1Name.value != "") {
         multisinglescreen.style.display = "none";
 
